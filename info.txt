@@ -22,6 +22,6 @@ Crear un usuario
 python manage.py createsuperuser o  winpty python manage.py createsuperuser
 
 Te pidira:
-Nombre de usuario
+Nombre de usuario DanielRojas2002
 correo
-contraseña
+contraseña  admin2002
