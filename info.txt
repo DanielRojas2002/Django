@@ -1,0 +1,27 @@
+Crear un ambiente 
+python -m venv "nombre del ambiente"
+
+Activar el Ambiente para poder descargar cosas
+source/"nombredelambiente"/Scripts/activate
+
+
+Iniciar un proyecto en django:
+django-admin startproject (website)
+
+
+Te tienes que meter en la terminal en la carpeta
+cd website/
+
+Crear una base de datos adentro de la carpeta 
+python manage.py migrate
+
+Ejecutar el Servidor
+python manage.py runserver
+
+Crear un usuario
+python manage.py createsuperuser o  winpty python manage.py createsuperuser
+
+Te pidira:
+Nombre de usuario
+correo
+contraseña
