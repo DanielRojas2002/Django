@@ -25,3 +25,12 @@ Te pidira:
 Nombre de usuario DanielRojas2002
 correo
 contraseña  admin2002
+
+
+Para crear aplicaciones integradas seria:
+python manage.py startapp "nombredelaapp"
+
+Despues tienes que integrarlo al setting del "main"
+INSTALLED_APPS = [
+    'productos.apps.ProductosConfig'
+    ]
