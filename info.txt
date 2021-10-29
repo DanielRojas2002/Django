@@ -34,3 +34,23 @@ Despues tienes que integrarlo al setting del "main"
 INSTALLED_APPS = [
     'productos.apps.ProductosConfig'
     ]
+
+Crear Modelo de datos {
+    class Producto (models.Model):
+        descripcion=models.CharField(max_length=50)
+        presentacion=models.CharField(max_length=50)
+        precio=models.FloatField()
+
+    Aqui creas tus campos en una tabla ver documentacion
+    https://docs.djangoproject.com/en/3.2/
+}
+
+Despues tienes que registrar tu modelo en admin
+
+Y despues you have to execute this command in your bash
+cuando hagas un cambio en la base de datos cuando creas una nueva tabla o hagas una implementacion 
+tienes que utilizar este comando
+
+        
+modelo ->makemigrations                     ->migrate
+ya      python manage.py makemigrations       python manage.py migrate
