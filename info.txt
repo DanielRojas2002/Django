@@ -54,3 +54,34 @@ tienes que utilizar este comando
         
 modelo ->makemigrations                     ->migrate
 ya      python manage.py makemigrations       python manage.py migrate
+
+
+---------------------------
+ORM 
+Clases mapeadoras de tablas 
+
+python manage.py shell   (python con sql)
+
+from productos.models import Producto  "Aqui accedes a la tabla Producto"
+>>> Producto.objects.values()           "Aqui checas si esa tabla tiene registros y te los devuelve"
+<QuerySet [{'id': 1, 'descripcion': 'Galletas', 'presentacion': '100gr', 'precio': 50.0}]>
+
+Crear un nuevo registro desde el shell seria:
+
+nuevoproducto=Producto(descripcion="Harina",presentacion="500 gr",precio=100)
+nuevoproducto.save() "para guardarlo en la bd"
+
+Para hacer selects=
+Producto.objects.filter(presentacion="500 gr").values()
+
+
+Modificar 
+Producto.objects.filter(id=1).update(descripcion="Manteca")
+
+Eliminar
+Producto.objects.filter(id=2).delete() 
+
+
+
+
+
