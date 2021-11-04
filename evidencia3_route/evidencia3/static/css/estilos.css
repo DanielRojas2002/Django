@@ -1,0 +1,68 @@
+nav{
+    background: rgb(5, 202, 236);
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+}
+
+h1{
+    color: green;
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    
+}
+
+header{
+    text-align: center;
+}
+
+article{
+    margin: auto;
+}
+
+section{
+    padding: 10px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "izq der";
+}
+
+.izq{
+    grid-area: izq;
+   
+}
+
+.der{
+    grid-area: der;
+    text-align: center;
+}
+
+.contenedor-img{
+    height: 100%;
+    width: 50%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+    
+}
